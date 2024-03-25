@@ -39,7 +39,7 @@ bl_info = {
     "name": "Alva Sequencer",
     "author": "Alva Theaters",
     "location": "Sequencer",
-    "version": (1, 0, 1),
+    "version": (1, 1, 1),
     "blender": (4, 0, 2),
     "description": "Sequence-based editing for ETC Eos lighting consoles and others.",
     "warning": "For reliability, migrate all data to console prior to real show.",
