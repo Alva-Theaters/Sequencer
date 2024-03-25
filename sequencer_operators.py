@@ -2124,12 +2124,9 @@ class ViewGraphOperator(bpy.types.Operator):
         if graph_editor:
             for region in graph_editor.regions:
                 if region.type == 'WINDOW':
-                    override = {
-                        'area': graph_editor,
-                        'region': region,
-                        'screen': context.screen,
-                        'scene': context.scene,
-                    }
+                    override = context.copy()
+                    override['area'] = graph_editor
+                    override['region'] = region
                     bpy.ops.graph.view_selected(override)
                     return {'FINISHED'}
         else:
