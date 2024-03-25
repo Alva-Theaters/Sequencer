@@ -44,7 +44,6 @@ bl_info = {
     "description": "Sequence-based editing for ETC Eos lighting consoles and others.",
     "warning": "For reliability, migrate all data to console prior to real show.",
     "wiki_url": "https://blendermarket.com/products/sorcerer/docs",
-    "tracker_url": "https://www.workstraight.com/site/login",
     }
 
 
