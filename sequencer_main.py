@@ -2774,7 +2774,6 @@ def unregister():
     del bpy.types.ColorSequence.frame_middle
     del bpy.types.ColorSequence.end_flash_macro_number
     del bpy.types.ColorSequence.start_flash_macro_number
-    del bpy.types.ColorSequence.frame_middle
     del bpy.types.ColorSequence.end_flash_macro_number
     del bpy.types.ColorSequence.start_flash_macro_number
     del bpy.types.ColorSequence.flash_down_input_background
