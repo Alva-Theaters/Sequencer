@@ -2129,14 +2129,8 @@ class ViewGraphOperator(bpy.types.Operator):
         # Prepare the context override for the Graph Editor
         for region in graph_editor.regions:
             if region.type == 'WINDOW':
-                override = {
-                    'area': graph_editor,
-                    'region': region,
-                    'screen': context.screen,
-                    'scene': context.scene,
-                }
-                # Execute the 'View Frame All' operation
-                bpy.ops.graph.view_all(override)
+                with bpy.context.temp_override(area=graph_editor, region=region):
+                    bpy.ops.graph.view_all()
                 return {'FINISHED'}
 
         self.report({'ERROR'}, "No suitable region found in the Graph Editor.")
