@@ -1223,9 +1223,6 @@ class ModalStripController(Operator):
                     row = box.row(align=True)
                     row.operator("my.record_preset", text="Store Preset", icon='NLA_PUSHDOWN')
                     row.operator("my.load_preset", text="Load Preset", icon='FILE_PARENT')
-                    row.alert = 1
-                    row.operator("my.osc_help_button", text="Help")
-                    row.alert= 0
                     row = box.separator()
                     box = column.box()  
                     row = box.row()
