@@ -1108,22 +1108,12 @@ class ModalStripController(Operator):
                         row.label(text='"sub 1 full", "submaster 3 75", "sub 1,3,4,7-10 75"')
                     box = column.box()
                     row = box.row()
-                    row.prop(active_strip, "flash_using_nodes", text="Use Nodes" if not active_strip.flash_using_nodes else "Using Nodes", slider=True, icon='NODETREE')
-                    row = box.row()
-                    if active_strip.flash_using_nodes:
-                        row.enabled = False
                     row = box.label(text="Flash Up: " + active_strip.flash_input_background)
                     row = box.row()
-                    if active_strip.flash_using_nodes:
-                        row.enabled = False
                     row.prop(active_strip, "flash_input")
                     row = box.row()
-                    if active_strip.flash_using_nodes:
-                        row.enabled = False
                     row = box.label(text="Flash Down: " + active_strip.flash_down_input_background)
                     row = box.row()
-                    if active_strip.flash_using_nodes:
-                        row.enabled = False
                     row.prop(active_strip, "flash_down_input")
                     row = box.separator()
                     row = box.row()
