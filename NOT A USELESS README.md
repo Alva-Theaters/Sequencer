@@ -6,6 +6,10 @@ Alva Sorcerer is considered an External Multimedia Animation Renderer. "External
 
 Alva Sequencer can technically be considered an EMAR since it does include 3D audio functionality. Because that code is already located within Sorcerer's sequencer scripts, we would have had to intentionally remove it to keep it out of the fee-less version. Because of our Anti-Reduction Policy, we won't take stuff out of a copy-pasted software component just to get you to buy the fee version. 
 
+The documentation for Sorcerer, which includes documentation for the Sequencer components, can be found here: 
+
+https://alva-sorcerer.readthedocs.io/en/latest/index.html#
+
 To use this software, you must download and install a recent version of Blender from blender.org. Currently, the exact URL to go to is:
 
 https://www.blender.org/download/
