@@ -43,7 +43,8 @@ bl_info = {
     "blender": (4, 0, 2),
     "description": "Sequence-based editing for ETC Eos lighting consoles and others.",
     "warning": "For reliability, migrate all data to console prior to real show.",
-    "wiki_url": "https://blendermarket.com/products/sorcerer/docs",
+    "doc_url": "https://alva-sorcerer.readthedocs.io/en/latest/index.html#",
+    "tracker_url": "https://github.com/Alva-Theaters/Sequencer/tree/main",
     }
 
 
