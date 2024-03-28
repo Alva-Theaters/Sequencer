@@ -41,4 +41,4 @@ Currently, most Sorcerer features are for light design, although there is suppor
 • Many other tools within Blender that have been under continuous, iterative evolution for 3 decades
 
 **BORING DEV NOTES:**
-3/28/2024 — I'm experimenting with the new 4.1 stable build. I'm finding that that the new "Cancel" UI element they added to popup menus does indeed affect ALL popup menus including addon ones (see release video if you haven't already). Will need to expidite adding cancel logic to all those modals now. The button does not appear to be causing runtime errors, fortunately.
+3/28/2024 — I'm experimenting with the new 4.1 stable build. I'm finding that that the new "Cancel" UI element they added to popup menus does indeed affect ALL popup menus including addon ones (see release video if you haven't already). Will need to expedite adding cancel logic to all those modals now. The button does not appear to be causing runtime errors, fortunately.
