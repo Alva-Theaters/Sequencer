@@ -45,3 +45,6 @@ Core Relevant Blender Feature Sets:
 • Blender’s highly customizable UI themes and keymap 
 • Performance capture for moving lights using motion tracking 
 • Many other tools within Blender that have been under continuous, iterative evolution for 3 decades
+
+**BORING DEV NOTES:**
+I'm experimenting with the new 4.1 stable build. I'm finding that that the new "Cancel" UI element they added to popup menus does indeed affect ALL popup menus including addon ones (see release video if you haven't already). Will need to expidite adding cancel logic to all those modals now. The button does not appear to be causing runtime errors, fortunately.
