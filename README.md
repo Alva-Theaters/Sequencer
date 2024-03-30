@@ -74,6 +74,7 @@ Alva Sequencer is the limited version of Sorcerer not behind a paywall.
 ---------------------------------------
 
 - Alva Theaters YouTube channel: https://www.youtube.com/channel/UCE6Td8fdLPvv3VLdfjIz5Dw
+- Software Documentation: https://alva-sorcerer.readthedocs.io/en/latest/index.html#
 
 
 **Contributions Guidelines:**
