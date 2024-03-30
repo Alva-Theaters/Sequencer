@@ -1,4 +1,4 @@
-**This is an External Multi-discplinary Animation Renderer (EMAR)**
+**This is an External Multi-disciplinary Animation Renderer (EMAR)**
 ======================================================================
 
 Alva Sorcerer is a heavyweight Blender addon consisting currently of about 20,000 lines and several hundred custom UI elements. It extends Blender's functionality far beyond computer graphics into the realm of theatrical show control for live performance venues. Sorcerer leverages the power of Blender to provide technical theatre designers the ability to think and work in completely new ways. This allows creation of truly exotic theatrical experiences. In the realm of professional 3D animation, it is not uncommon for an animator to spend weeks or even months creating and perfecting just 10 seconds of an animation. This speaks volumes to the level of precision that Blender provides. Sorcerer connects theatrical designers to the same precision. 
