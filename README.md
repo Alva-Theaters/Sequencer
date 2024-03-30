@@ -81,7 +81,7 @@ Alva Sequencer is the limited version of Sorcerer not behind a paywall.
 ---------------------------------------
 
 - Currently the biggest need is to complete Beta testing by testing features and fixing issues that come up there. All features currently work, but only just. Sorcerer's harmonizer logic is in the process of a complete rewrite to greatly enhance reliability, adaptability, and maintainability.
-- The is a massive codebase with a massive feature set that I cannot adequately maintain alone. Any help is much appreciated.
+- This is a massive codebase with a massive feature set that I cannot adequately maintain alone. Any help is much appreciated.
 - The vast majority of the code is largely PEP8ified.
 - Professional developers would likely appreciate the steps taken on the new WIP harmonizer prototype, but would likely wish to rewrite massive sections elsewhere.
 - Contact info is help@alvatheaters.com
