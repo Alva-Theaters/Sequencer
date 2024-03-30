@@ -31,7 +31,7 @@ Alva Sequencer is the limited version of Sorcerer not behind a paywall.
 **Use Cases:**
 ------------------
 
-- Use simple node layout to provide students or volunteers the simplest conceivable way to control lights
+- Use an absurdly simple node layout to provide students or volunteers the simplest conceivable way to control lights
 - Output short, extremely sophisticated and precise lighting animations as deliverables to play as effects
 - Animate moving lights to track 3D audio objects
 - Use the video editor to make timecoding on Eos absurdly intuitive
