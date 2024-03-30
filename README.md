@@ -8,41 +8,41 @@ Contrary to most similar softwares, Sorcerer does not directly control any stage
 Currently, most Sorcerer features are for light design, although there is support for 3D audio rendering as well. Much of the Sequencer component of Sorcerer is only compatible with ETC Eos lighting consoles. The other aspects of Sorcerer are expected to be compatible with universal lighting consoles.
 
 
+---------------------------------------
 **Core Feature Sets of Sorcerer:**
 ---------------------------------------
 
-• “Orb” assistant that rapidly automates many repetitive tasks on Eos 
-
-• Most static menu panels can be hidden and accessed instead as popups 
-
-• Rapidly create flash effects with the sequencer and link to nodes 
-
-• Animate 3D objects over the lighting plot in 3D view for 3D-object-based effects (influencers)
-
-• Directly link pan/tilt of movers to 3D audio objects and create deliverables (sonic light beam)
-
-• Create “qmeo” deliverables after animating complex effects 
-
-• Sequencer automatically creates events in the Eos event list based on strips 
-
-• Use your own Python code to control lights or 3D audio objects 
-
-• “School mode” password-protects key settings that students/volunteers shouldn’t touch
+- Node-based light design
+- Sequence-based light design
+- Animation-based light design
+- 3D-object-based light-design (dynamic spatial selections)
+- Motion capture for light design
+- 3D audio panner integrated directly into stage lighting control
+- Pop-up ML editor within 3D view
+- Automation tools that rapidly produce deliverables
 
 
+**What Sorcerer Does NOT Do:**
+---------------------------------------
+
+- It is not DMX software, it instead remote-controls professional consoles and produces deliverables
+- It is not visualization software
+- It does not output multichannel audio, it instead produces separate audio files for each speaker and also remote controls mixers for realtime monitoring
+- It is not meant to be running during final shows, it instead is meant to be used to create deliverables that the console/mixer or Qlab will perform later
+
+
+---------------------------------------
 **Relevant Blender Feature Sets:**
 ---------------------------------------
 
-• Advanced animation tools like Graph Editor, NLA Editor, and Dope Sheet 
+- Advanced animation tools like Graph Editor, NLA Editor, Dope Sheet, arrays, and constraints 
+- Blender’s .blend file management 
+- Blender’s highly customizable UI and keymap 
+- Asset manager for organizing and sharing file components
+- Many other tools within Blender that have been under continuous, iterative evolution for 3 decades
 
-• Blender’s .blend file management 
 
-• Blender’s highly customizable UI themes and keymap 
-
-• Performance capture for moving lights using motion tracking 
-
-• Many other tools within Blender that have been under continuous, iterative evolution for 3 decades
-
+------------------------
 **Boring Dev Notes:**
 ------------------------
 3/28/2024 — I'm experimenting with the new 4.1 stable build. I'm finding that that the new "Cancel" UI element they added to popup menus does indeed affect ALL popup menus including addon ones (see release video if you haven't already). Will need to expedite adding cancel logic to all those modals now. The button does not appear to be causing runtime errors, fortunately.
