@@ -55,7 +55,7 @@ Alva Sequencer is the limited version of Sorcerer not behind a paywall.
 
 - Alva Sequencer was initially developed in Blender 2.79, but has since been adapted to Blender 4.0
 - Alva Sorcerer was developed on Blender 4.0
-- Basic Sorcerer/Sequencer functionality has been tested on Blender 4.1 and Blender 3.5 without any sign of problems, although 4.1 introduces a Cancel button on all popups, but this does not do anything yet for most Sorcerer/Sequencer popups
+- Basic Sorcerer/Sequencer functionality has been tested on Blender 3.5 without any sign of problems, although 4.1 introduces a Cancel button on all popups, but this does not do anything yet for most Sorcerer/Sequencer popups, also it appears there may be an issue with the toolbar and add menu not showing in Node Editor for Blender 4.1, not confirmed yet though
 - Alva Sequencer was designed primarily for ETC Eos, but some features like animation and trigger strips should work on other consoles
 - Excluding the patch feature, Alva Sorcerer-only features were designed with universal lighting console compatibility in mind, but it has not been tested on consoles other than Eos
 - 3D audio file playback is compatible with any software capable of playing numerous tracks at once to numerous sound card outputs (Qlab, for example)
