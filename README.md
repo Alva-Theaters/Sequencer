@@ -1,4 +1,5 @@
-**Alva Sorcerer**
+**This is an External Multi-discplinary Animation Renderer (EMAR)**
+======================================================================
 
 Alva Sorcerer is a heavyweight Blender addon consisting currently of about 20,000 lines and several hundred custom UI elements. It extends Blender's functionality far beyond computer graphics into the realm of theatrical show control for live performance venues. Sorcerer leverages the power of Blender to provide technical theatre designers to think and work in completely new ways. This allows creation of truly exotic theatrical experiences. In the realm of professional 3D animation, it is not uncommon for an animator to spend weeks or even months creating and perfecting just 10 seconds of an animation. This speaks volumes to the level of precision that Blender provides. Sorcerer connects theatrical designers to the same precision. 
 
@@ -8,6 +9,7 @@ Currently, most Sorcerer features are for light design, although there is suppor
 
 
 **Core Feature Sets of Sorcerer:**
+---------------------------------------
 
 • “Orb” assistant that rapidly automates many repetitive tasks on Eos 
 
@@ -29,6 +31,7 @@ Currently, most Sorcerer features are for light design, although there is suppor
 
 
 **Relevant Blender Feature Sets:**
+---------------------------------------
 
 • Advanced animation tools like Graph Editor, NLA Editor, and Dope Sheet 
 
@@ -40,5 +43,6 @@ Currently, most Sorcerer features are for light design, although there is suppor
 
 • Many other tools within Blender that have been under continuous, iterative evolution for 3 decades
 
-**BORING DEV NOTES:**
+**Boring Dev Notes:**
+------------------------
 3/28/2024 — I'm experimenting with the new 4.1 stable build. I'm finding that that the new "Cancel" UI element they added to popup menus does indeed affect ALL popup menus including addon ones (see release video if you haven't already). Will need to expedite adding cancel logic to all those modals now. The button does not appear to be causing runtime errors, fortunately.
