@@ -62,6 +62,38 @@ Alva Sequencer is the limited version of Sorcerer not behind a paywall.
 - 3D audio realtime monitoring should be compatible with most sound mixers that support OSC input
 
 
+**Installation and Setup:**
+---------------------------------------
+
+- Download and install the latest version of Blender from Blender.org
+- Click "Preferences" under "Edit" at the top left, click the "Add-ons" button on the left, click the "Install" button on the top right, select Sorcerer/Sequencer, and then click the checkbox next to the new addon to enable Sorcerer/Sequencer
+- Navigate to the Shader Editor/World, 3D view, or to the video editor  to find Sorcerer/Sequencer UI elements on side N panels, on the T toolbars on the right, by the orb icon in the headers, or on keyboard popup menus ("P" in 3D view for channel controller, "F" in node editor and video editor for Formatter, and "M" in the video editor for Strip Media)
+
+
+**Examples and Tutorials:**
+---------------------------------------
+
+- Alva Theaters YouTube channel: https://www.youtube.com/channel/UCE6Td8fdLPvv3VLdfjIz5Dw
+
+
+**Contributions Guidelines:**
+---------------------------------------
+
+- Currently the biggest need is to complete Beta testing by testing features and fixing issues that come up there. All features currently work, but only just. Sorcerer's harmonizer logic is in the process of a complete rewrite to greatly enhance reliability, adaptability, and maintainability.
+- The is a massive codebase with a massive feature set that I cannot adequately maintain alone. Any help is much appreciated.
+- The vast majority of the code is largely PEP8ified.
+- Professional developers would likely appreciate the steps taken on the new WIP harmonizer prototype, but would likely wish to rewrite massive sections elsewhere.
+- Contact info is help@alvatheaters.com
+
+
+**Support and Community:**
+---------------------------------------
+
+- If you are a customer of Alva Theaters, the software you purchased should be supported via WorkStraight, so create work order requests through the links provided to you on the marketplace if something is broken
+- If you are not a customer, you can ask for help at help@alvatheaters.com
+- If a decision made by the software seems really dumb, consider venting about it to thisisdumb@alvatheaters.com
+
+
 **Boring Dev Notes:**
 ------------------------
 3/28/2024 — I'm experimenting with the new Blender 4.1 stable build. I'm finding that that the new "Cancel" UI element they added to popup menus does indeed affect ALL popup menus including addon ones (see release video if you haven't already). Will need to expedite adding cancel logic to all those modals now. The button does not appear to be causing runtime errors, fortunately.
