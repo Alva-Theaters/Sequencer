@@ -92,6 +92,7 @@ Alva Sequencer is the limited version of Sorcerer not behind a paywall.
 - If you are a customer of Alva Theaters, the software you purchased should be supported via WorkStraight, so create work order requests through the links provided to you on the marketplace if something is broken
 - If you are not a customer, you can ask for help at help@alvatheaters.com
 - If a decision made by the software seems really dumb, consider venting about it to thisisdumb@alvatheaters.com
+- Alva Theaters has a subreddit for discussing its software: https://www.reddit.com/r/alvatheaterssoftware/
 
 
 **Boring Dev Notes:**
