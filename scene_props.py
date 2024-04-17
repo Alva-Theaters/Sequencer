@@ -32,7 +32,7 @@ from bpy.props import *
 
 
 def school_mode_password_updater(self, context):
-    if self.school_mode_password in ["Halyna Hutchins", "Halayna Hutchins", "halayna hutchins", "halyna hutchins", "halayana huchins", "halayna huchins", "halayna hutchins", "Halayna hutchins", "halayna Hutchins"]:
+    if self.school_mode_password.lower() in ["password123", "password 123"]:
         self.school_mode_enabled = not self.school_mode_enabled
         self.school_mode_password = ""
     
