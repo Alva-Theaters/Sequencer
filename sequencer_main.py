@@ -676,8 +676,9 @@ class RenderStripsOperator(bpy.types.Operator):
 
         self.send_osc_command("/eos/key/live", ip_address, port, "1")
         self.send_osc_command("/eos/key/live", ip_address, port, "0")
-        snapshot = str(context.scene.orb_finish_snapshot)
-        self.send_osc_command("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
+        if context.scene.orb_finish_snapshot:
+            snapshot = str(context.scene.orb_finish_snapshot)
+            self.send_osc_command("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
         return{'FINISHED'}
 
     def send_osc_command(self, address, ip, port, command):
@@ -2378,7 +2379,7 @@ def register():
     bpy.types.Scene.house_up_argument = bpy.props.StringProperty(default="500 at 75 Enter", description="Argument needed to raise house lights on stop")
     bpy.types.Scene.sync_timecode = bpy.props.BoolProperty(default=True, description="Sync console's timecode clock with Sorcerer on play/stop/scrub based on top-most active sound strip's event list number")
     bpy.types.Scene.timecode_expected_lag = bpy.props.IntProperty(default=0, min=0, max=100, description="Expected lag in frames")
-    bpy.types.Scene.orb_finish_snapshot = bpy.props.IntProperty(default=1, min=1, max=9999, description="Snapshot that Orb should set when done")
+    bpy.types.Scene.orb_finish_snapshot = bpy.props.IntProperty(default=0, min=0, max=9999, description="Snapshot that Orb should set when done")
 
     bpy.types.Scene.color_palette_color = bpy.props.FloatVectorProperty(
     name="Color Palette Color",

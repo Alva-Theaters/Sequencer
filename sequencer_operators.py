@@ -1029,8 +1029,9 @@ class ExecuteOnCueOperator(bpy.types.Operator):
         #resets stupid macro key
         send_osc_string(address_three, ip_address, port, argument_off) 
         
-        snapshot = str(context.scene.orb_finish_snapshot)
-        send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
+        if context.scene.orb_finish_snapshot:
+            snapshot = str(context.scene.orb_finish_snapshot)
+            send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
         
         self.report({'INFO'}, "Orb complete.")
 
@@ -1184,8 +1185,9 @@ class DisableOnCueOperator(bpy.types.Operator):
         #resets stupid macro key
         send_osc_string(address_three, ip_address, port, argument_off) 
         
-        snapshot = str(context.scene.orb_finish_snapshot)
-        send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
+        if context.scene.orb_finish_snapshot:
+            snapshot = str(context.scene.orb_finish_snapshot)
+            send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
         
         self.report({'INFO'}, "Orb complete.")
 
@@ -1359,8 +1361,9 @@ class ExecuteAnimationOnCueOperator(bpy.types.Operator):
         #resets stupid macro key
         send_osc_string(address_three, ip_address, port, argument_off) 
         
-        snapshot = str(context.scene.orb_finish_snapshot)
-        send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
+        if context.scene.orb_finish_snapshot:
+            snapshot = str(context.scene.orb_finish_snapshot)
+            send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
         
         self.report({'INFO'}, "Orb complete.")
 
@@ -1519,8 +1522,9 @@ class DisableAnimationOnCueOperator(bpy.types.Operator):
         active_strip.start_frame_macro = active_strip.execute_animation_with_macro_number
         active_strip.end_frame_macro = active_strip.disable_animation_with_macro_number
         
-        snapshot = str(context.scene.orb_finish_snapshot)
-        send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
+        if context.scene.orb_finish_snapshot:
+            snapshot = str(context.scene.orb_finish_snapshot)
+            send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
         
         self.report({'INFO'}, "Orb complete.")
 
@@ -1606,8 +1610,9 @@ class GenerateStartFrameMacroOperator(bpy.types.Operator):
         #resets stupid macro key
         send_osc_string(address_three, ip_address, port, argument_off) 
         
-        snapshot = str(context.scene.orb_finish_snapshot)
-        send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
+        if context.scene.orb_finish_snapshot:
+            snapshot = str(context.scene.orb_finish_snapshot)
+            send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
         
         self.report({'INFO'}, "Orb complete.")
         
@@ -1694,8 +1699,9 @@ class GenerateEndFrameMacroOperator(bpy.types.Operator):
         #resets stupid macro key
         send_osc_string(address_three, ip_address, port, argument_off) 
         
-        snapshot = str(context.scene.orb_finish_snapshot)
-        send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
+        if context.scene.orb_finish_snapshot:
+            snapshot = str(context.scene.orb_finish_snapshot)
+            send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
         
         self.report({'INFO'}, "Orb complete.")
         
@@ -1842,8 +1848,9 @@ class BuildFlashMacrosOperator(bpy.types.Operator):
         send_osc_string(enter, ip_address, port, up)
         send_osc_string(learn, ip_address, port, enter_arg)
         
-        snapshot = str(context.scene.orb_finish_snapshot)
-        send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
+        if context.scene.orb_finish_snapshot:
+            snapshot = str(context.scene.orb_finish_snapshot)
+            send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
         
         self.report({'INFO'}, "Orb complete.")
 
@@ -2432,8 +2439,9 @@ class SyncCueOperator(bpy.types.Operator):
         active_strip.name = "Cue " + str(cue_number)
         self.report({'INFO'}, "Orb complete.")
         
-        snapshot = str(context.scene.orb_finish_snapshot)
-        send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
+        if context.scene.orb_finish_snapshot:
+            snapshot = str(context.scene.orb_finish_snapshot)
+            send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
         
         return {'FINISHED'}
 
@@ -3228,8 +3236,9 @@ class ColorPaletteOperator(bpy.types.Operator):
             scene.color_palette_number += 1
             scene.color_palette_name = ""
             
-        snapshot = str(context.scene.orb_finish_snapshot)
-        send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
+        if context.scene.orb_finish_snapshot:
+            snapshot = str(context.scene.orb_finish_snapshot)
+            send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
         
         return {'FINISHED'}
 
@@ -3409,8 +3418,9 @@ class BakeFCurvesToCuesOperator(bpy.types.Operator):
             
             time.sleep(.3)
             
-        snapshot = str(context.scene.orb_finish_snapshot)
-        send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
+        if context.scene.orb_finish_snapshot:
+            snapshot = str(context.scene.orb_finish_snapshot)
+            send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
             
         self.report({'INFO'}, "Orb complete.")
         
@@ -3468,8 +3478,9 @@ class RerecordCuesOperator(bpy.types.Operator):
         argument = "Cue " + str(active_strip.animation_cue_list_number) + " / " + str(start_frame) + " thru " + str(end_frame) + " Time " + str(cue_duration) + " Enter "
         send_osc_string(newcmd, ip_address, port, argument)
         
-        snapshot = str(context.scene.orb_finish_snapshot)
-        send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
+        if context.scene.orb_finish_snapshot:
+            snapshot = str(context.scene.orb_finish_snapshot)
+            send_osc_string("/eos/newcmd", ip_address, port, f"Snapshot {snapshot} Enter")
 
         self.report({'INFO'}, "Orb complete.")
         
