@@ -26,6 +26,8 @@
 
 ## Double hashtag indicates notes for future development requiring some level of attention
 
+# pyright: reportInvalidTypeForm=false
+
 
 import bpy
 from bpy.props import *

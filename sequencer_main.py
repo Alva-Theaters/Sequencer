@@ -26,20 +26,14 @@
 
 ## Double hashtag indicates notes for future development requiring some level of attention
 
+# pyright: reportInvalidTypeForm=false
 
 import bpy
-import bpy_extras
 import socket
-import blf
-import threading
 import time
 import re
-import json
 import math
 from functools import partial
-from bpy.types import PropertyGroup
-from bpy.props import StringProperty
-from _bpy import context as _context
 from bpy.app.handlers import persistent
 import os
 import bpy.utils.previews
@@ -297,7 +291,6 @@ class PlaybackMonitor:
     @persistent           
     def playback_start_handler(self, scene, depsgraph):
         self.is_playing_back = True
-        scene = _context.scene
 
         # Abort if unarmed
         if not scene.is_armed_osc:
@@ -2251,7 +2244,7 @@ def draw_func(self, context):
     pcoll = preview_collections["main"]
     orb = pcoll["orb"]
    
-    scene = _context.scene
+    scene = context.scene
     layout = self.layout
     row = layout.row()
     row.operator("seq.show_sequencer_settings", text="", icon_value=orb.icon_id, emboss=False)

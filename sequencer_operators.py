@@ -26,20 +26,14 @@
 
 ## Double hashtag indicates notes for future development requiring some level of attention
 
+# pyright: reportInvalidTypeForm=false
 
 import bpy
-import bpy_extras
 import socket
-import blf
-import threading
 import time
-import re
-import json
-import math
 from functools import partial
-from bpy.types import PropertyGroup
-from bpy.props import StringProperty
-from _bpy import context as _context
+
+from .sequencer_main import find_available_channel
 
 
 max_zoom = 1000
